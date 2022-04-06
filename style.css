@@ -1,50 +1,142 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-image: url(https://cdn.discordapp.com/attachments/639826394850787351/960556180177039420/unknown.png);
     background-color: rgb(40, 40, 40);
     font-size: 18px;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
     font-size: 2em;
     color: white;
     text-shadow: 3px 3px black;
-    padding-top: 5vh;
     text-align: center;
-    height: 22vh;
-    background-color: #8aefdc;
+    height: 15vh;
+    background-color: #00ffd1;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 1vh;
 }
 
 section {
-    background-color: azure;
+    background-color: #343333;
     padding: 20px;
     margin: 20px auto;
-    color: black;
+    color: #e7e7e7;
     font-size: 1.1em;
-    max-width: 1000px;
+    max-width: 105vh;
     position: relative;
 }
 
 nav {
-    background-color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     z-index: 10;
     position: fixed;
     top: 0;
+    height: 6vh;
+    background-color: #4c5959;
+    flex-grow: 1;
 }
 
-.container1, .container2, .container3, .container4 {
+button {
+    background-color: #343333;
+}
+
+a {
+    border: none;
+    padding-inline: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container1, .container2, .container3, .container4, .container5 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.resultaatfotos {
+    width: 400px;
+    height: 500px;
+}
+
+.prototype {
+    width: 250px;
+    height: 250px;
+}
+
+.wide {
+    width: 400px;
+    height: 150px;
+}
+
+.lessWide {
+    width: 400px;
+    height: 250px;
+}
+
+.poster {
+    width: 870px;
+    height: 600px;
+}
+
+.zuidplein {
+    width: 300px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    section {
+        max-width: 80%;
+        justify-content: center;
+    }
+
+    a {
+        padding-inline: 1vh;
+        font-size: 0.8em;
+    }
+
+    header {
+        width: 100%;
+        height: 12vh;
+        padding-top: 5vh;
+        font-size: 1em;
+    }
+    .container1, .container2, .container3, .container4, .container5 {
+        display: block;
+    }
+
+    .resultaatfotos {
+        width: 90%;
+        height: 100%;
+    } .prototype {
+        width: 60vw;
+        height: 40vh;
+    } .wide {
+        width: 60vw;
+        height: 10vh;
+    } .lessWide {
+        width: 60vw;
+        height: 20vh;
+    } .poster {
+        width: 100%;
+        height: 100%;
+    } .zuidplein {
+        width: 60vw;
+        height: 20vh;
+    }
 }
