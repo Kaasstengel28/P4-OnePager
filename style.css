@@ -1,10 +1,12 @@
 body {
-    background-image: url(https://cdn.discordapp.com/attachments/639826394850787351/960556180177039420/unknown.png);
-    background-color: rgb(40, 40, 40);
+    background-image: url("https://cdn.discordapp.com/attachments/639826394850787351/979462062730276914/unknown.png");
+    background-color: #404040;
     font-size: 18px;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -20,12 +22,12 @@ header {
 }
 
 section {
-    background-color: #343333;
+    background-color: rgba(169, 169, 169, 0.7);
     padding: 20px;
     margin: 20px auto;
     color: #e7e7e7;
     font-size: 1.1em;
-    max-width: 105vh;
+    max-width: 60vw;
     position: relative;
 }
 
@@ -41,11 +43,7 @@ nav {
     flex-grow: 1;
 }
 
-button {
-    background-color: #343333;
-}
-
-a {
+nav a {
     border: none;
     padding-inline: 5vh;
     text-align: center;
@@ -55,42 +53,44 @@ a {
     color: white;
     margin: 4px 2px;
     cursor: pointer;
+    background-color: #343333;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: #00ffd1;
 }
 
 .container1, .container2, .container3, .container4, .container5 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 .resultaatfotos {
     width: 400px;
-    height: 500px;
 }
 
 .prototype {
     width: 250px;
-    height: 250px;
 }
 
 .wide {
     width: 400px;
-    height: 150px;
 }
 
 .lessWide {
     width: 400px;
-    height: 250px;
 }
 
 .poster {
     width: 870px;
-    height: 600px;
 }
 
-.zuidplein {
-    width: 300px;
-    height: 200px;
+.logo {
+    width: 200px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -99,17 +99,14 @@ a {
         padding: 0;
         overflow-x: hidden;
     }
-
     section {
         max-width: 80%;
         justify-content: center;
     }
-
     a {
         padding-inline: 1vh;
         font-size: 0.8em;
     }
-
     header {
         width: 100%;
         height: 12vh;
@@ -119,24 +116,19 @@ a {
     .container1, .container2, .container3, .container4, .container5 {
         display: block;
     }
-
-    .resultaatfotos {
+   .resultaatfotos {
         width: 90%;
-        height: 100%;
     } .prototype {
         width: 60vw;
-        height: 40vh;
     } .wide {
         width: 60vw;
-        height: 10vh;
     } .lessWide {
         width: 60vw;
-        height: 20vh;
     } .poster {
         width: 100%;
-        height: 100%;
-    } .zuidplein {
+    } .logo {
         width: 60vw;
-        height: 20vh;
     }
 }
+
+
