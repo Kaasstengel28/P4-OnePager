@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://cdn.discordapp.com/attachments/639826394850787351/979462062730276914/unknown.png");
+    background-image: url("https://cdn.discordapp.com/attachments/639826394850787351/996126182716227716/unknown.png");
     background-color: #404040;
     font-size: 18px;
     margin: 0;
@@ -90,7 +90,10 @@ nav a:hover {
 }
 
 .logo {
-    width: 200px;
+    width: 400px;
+}
+.Art1 {
+    width: 1000px;
 }
 
 @media only screen and (max-width: 600px) {
